@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>increse and decrease the number</title>
+</head>
+<body>
+    <div class="containor">
+        <div class="box">
+            <div class="box1">
+            <h1 id="h1">0</h1>
+            </div>
+            <div class="box2">
+            <button class="min" onclick="min()">min</button>
+            <button class="upp" onclick="upp()">upp</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let count=0;
+        let counter=document.getElementById("h1");
+        function min()
+        {
+            if(count==0){
+                count=0
+            }
+            else{
+                count = count-1;
+            }
+            counter.innerHTML=count;
+        }
+        function upp()
+        {
+            count=count+1
+            counter.innerHTML=count;
+        }
+    </script>
+    
+</body>
+</html>
